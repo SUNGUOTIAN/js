@@ -3,7 +3,42 @@
 		<meta charset="utf-8">
 		<title></title>
 		<script type="text/javascript">
+			/*
+			   1、判断一个年份是不是闰年
+			   分析：
+			       参数：年份
+				   返回值：是否是闰年
+			// */
+		 //   function leapyear(year){
+   //             if(year % 400 == 0 || year % 4 == 0 && year % 100 !=0){
+			// 	   return true;
+		 //       } else{
+			// 	   return false;
+			//    }
+			// }
+			// alert(leapyear(2000));
+			// 
+			/*
+			   判断一个数是否是素数
+			   素数：只能被2和他本身整除的数。
+			   
+			   参数：一个数
+			   返回值：是否是素数 布尔值
 			
+			*/
+		   function prime(num){
+		      var isyes = false;//是否是素数
+					 
+			  for(var i = 2; i < num; i++){
+				  if(num % i == 0){
+					  inyes = true;//有成功一次
+					  break;
+				  }
+			  }		
+			   
+			   return !isyes
+	    }
+		alert(prime(5));
 		</script>
 	</head>
 	<body>
