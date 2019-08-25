@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			  作用域：就是起作用的范围，或者有效范围，每一个函数的声明都会形成
+			  一个作用域。
+			*/
+			var a = 10;
+			function sum(){
+				a = 5;
+				
+			}
+			alert(a);
+			sum()
+			alert(a);
+				
+				
+				
+				
+				
+			var a = 10;
+			function sum(){
+				var a = 5;
+				alert(a);
+			}
+			alert(a);
+			sum();
+			alert(a);
+			
+			
+			/*
+			   全局作用域
+			      全局作用域声明的变量 全局变量
+			   局部作用域 函数
+			      局部作用域声明的变量 局部变量，
+				  局部变量生命周期和生效范围，都是声明该变量的函数区域。
+				  当函数调用完成后，就直接销毁。
+				如果全局作用域和局部作用域变量重名，我们采取就近原则，当前访问这个变量
+				  离哪个作用域近，就是哪个作用域。
+			
+			*/
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

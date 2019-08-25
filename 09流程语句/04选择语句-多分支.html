@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			多分支语句
+			【格式】
+			if（表达式1）{
+				执行语句1；
+			}else if(表达式2){
+				执行语句2；
+			else if（表达式3）{
+				执行语句3；
+			}
+			....
+			else{
+				执行语句N
+			}
+			【规律】从上往下，满足哪个条件就执行对于的语句，都不满足时，执行最后的else的语句，只能进入其中之一。
+			
+			*/
+		   // var y = null;
+		   // var x = 11;
+		   // if(x < 1){
+			  //  y =x;
+		   // }else if(x >= 1 && x < 10){
+			  //  y = 2* x + 1; 
+		   // }else{
+			  //  y = 5 * x - 17;
+		   // }
+		   // alert(y);
+		   /*
+		     2、成绩判定
+			   大于85 优秀 分等级 95-100  1000
+			                     90-95   800
+								 85-90   300
+		       小于等于75小于等于85 良好
+			   大于等于60小于等于75 及格
+			   小于60 不及格
+		   */
+		   
+		   var result = 99;
+		   if(result > 85){
+			 alert("优秀");  
+			 //在进行区分,在条件语句里面,再去编写条件语句,嵌套if结构
+			 if(result >=95 && result < 100){
+				 alert("奖励1000块");
+				 alert("奖励100块");
+				 alert("奖励10块");
+				 alert("奖励1块");
+			 }else if(result >=90 && result < 95){
+			     alert("奖励800块");
+			 }else  if(result >= 85 && result < 90){
+			     alert("奖励300块");
+			 }
+			}else if(result >=75 && result <85){
+				alert("良好");
+			}else if(result >= 60 &&result <75){
+				alert("及格");
+			}else if(result >= 1 && result <59){
+				alert("不及格");
+			}
+			    
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

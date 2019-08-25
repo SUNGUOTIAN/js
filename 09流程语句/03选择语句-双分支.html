@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>document</title>
+		<script type="text/javascript">
+			/*
+			  双分支语句
+			  【格式】
+			  if（判断条件/表达式）{
+				  执行语句1；
+			  }eles if{
+				  执行语句2；
+			  }
+			  【规则】 当括号的判断条件/
+			  表达式结果成立的时候，执行执行语句1，否则执行执行语句2；
+			  
+			*/
+		   // var num = 9;
+		   // if (num % 2==0){
+			  // alert("这是一个偶数");
+		   // }else          {
+			  //  alert("这是一个奇数");
+		   // }
+		   //2.求两个数中最大数
+		   // var num1 = 10;
+		   // var num2 = 20;
+		   // var max = null;//如果在声明变量的时候,没有赋值,那么一般情况下,将当前这个变量的值设置成null.
+		   // if(num1 > num2){
+			  //   max =num1;
+		   // }else max=num2;
+		   // alert("两个数中的最大数是：" + max);
+		    // 3.判断一个年份是闰年还是平年;
+			/*
+			 闰年条件：
+			 1、可以被400整除
+			 2、可以被4整除，但是不可以被100整除
+			*/
+		   var year= 2014;
+		   if(year % 400 == 0 || year % 4 == 0 && year % 100 !=0){
+			   alert("这是一个闰年");
+		   }else{
+			   alert("这是一个平年");
+		   }
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

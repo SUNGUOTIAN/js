@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>document</title>
+		<script type="text/javascript">
+			/*
+			   Number（） 讲别的数据类型转成数字
+			          1、布尔值 true=>1 false=>0
+					  2、字符串 纯数字的字符串 =>对应的数字,否则NaN
+					  3、特殊数据类型null=>0  undefined=>NaN
+					  
+			   parseint（） 兼容number的功能，取整
+			   parseFloat() 取浮点数 带小数的数字 可以将别的数据类型转换成数字
+			
+			 补充：
+			
+			*/
+		   // var tmp=Number(true); 1
+		   // var tmp=Number(false);0
+		   
+		   // var tmp=Number(null);//0
+		   // var tmp=Number(undefined);NaN
+		   
+		   // var tmp=number("20a");//NaN
+		   // var tmp=parseInt("20a"); 20
+		    // var tmp=parseInt("3.14"); 3
+			// var tmp=parseFloat("3.14");//number
+			// var tmp = 1 / 0;  //infinity 无穷大
+			// var tmp = -1 / 0; //infinity 无穷小
+		   alert(tmp); 
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

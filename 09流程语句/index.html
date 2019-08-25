@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+	</head>
+	<body>
+		BMI:<div id="bmi">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var height = 1.74;
+		var weight = 52;
+		var bmi = weight / height / height;
+		
+		// if (bmi < 18.5){
+		// 	alert('你很瘦');
+		// }else if( bmi>18.5 && bmi<=24.99){
+		// 	alert('你很健康');
+		// }else if( bmi>=25 && bmi<=28){
+		// 	alert('你的快乐多一斤');
+		// }else if( bmi>=28 && bmi<=32){
+		// 	alert('你是猪');
+		// }else{
+		// 	alert('猪八戒');
+		// }
+		
+		function calc(w,h){
+			var b = w / h /h;
+			return b;
+		}
+		
+		var BMI = calc(weight,height);
+		var a = calc(55,1.6);
+		var b = calc(80,1.8);
+		// alert(BMI);
+		// alert(a);
+		// alert(b);
+		// 
+		// alert('你很瘦');
+		// 
+		// alert('你很健康');
+		// 
+		// alert('你的快乐多一斤');
+		document.getElementById('bmi').innerHTML = BMI;
+	</script>
+</html>

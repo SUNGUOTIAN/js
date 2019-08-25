@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+		       【注】一般情况下，循环中i从0开始
+			   【注】循环中变量，命名 i j k   
+			*/
+		//第一层循环，决定打印了几行
+		
+		// for(var i = 0; i < 5; i++){
+		// 	//每一行打印几个星,对应行和打印的星是一致
+		// 	for(var j = 0; j <= i; j++){
+		// 		document.write("*");
+		// 	}
+		// 	document.write("br />");
+		// }
+		
+		for(var i = 0; i < 5; i++){
+			//每一行的空格,行数-当前行打印的星的个数
+			for(var k = 0; k < 5 - i - 1; k++){
+				document.write("E");
+			}
+			//每一行打印几个星,对应行和打印的星是一致
+			for(var j = 0; j <= i; j++){
+				document.write("F");
+			}
+			document.write("<br />");
+		}
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
